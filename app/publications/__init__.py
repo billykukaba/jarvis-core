@@ -1,0 +1,1 @@
+"""Publications Service module."""
