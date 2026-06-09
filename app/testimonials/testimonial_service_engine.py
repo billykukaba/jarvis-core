@@ -11,9 +11,9 @@ from app.testimonials.schemas import TestimonialRecord
 # {
 #     "billy": [
 #         {
-#             "name": "Dr. Jane Smith",
-#             "role": "Professor of AI",
-#             "message": "An exceptional student with deep technical skills.",
+#             "name": "Jane Smith",
+#             "role": "CTO at OpenAI",
+#             "message": "Billy is an exceptional engineer.",
 #         }
 #     ]
 # }

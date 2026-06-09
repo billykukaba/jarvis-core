@@ -10,9 +10,9 @@ class TestimonialRecord(BaseModel):
         json_schema_extra={
             "examples": [
                 {
-                    "name": "Dr. Jane Smith",
-                    "role": "Professor of AI",
-                    "message": "An exceptional student with deep technical skills.",
+                    "name": "Jane Smith",
+                    "role": "CTO at OpenAI",
+                    "message": "Billy is an exceptional engineer.",
                 }
             ]
         }
@@ -20,18 +20,18 @@ class TestimonialRecord(BaseModel):
 
     name: str = Field(
         min_length=1,
-        description="Person providing the testimonial",
-        examples=["Dr. Jane Smith"],
+        description="Name of the person giving the testimonial",
+        examples=["Jane Smith"],
     )
     role: str = Field(
         min_length=1,
-        description="Role or relationship of the person",
-        examples=["Professor of AI"],
+        description="Professional role or title of the person",
+        examples=["CTO at OpenAI"],
     )
     message: str = Field(
         min_length=1,
-        description="Testimonial message or endorsement",
-        examples=["An exceptional student with deep technical skills."],
+        description="Testimonial message or quote",
+        examples=["Billy is an exceptional engineer."],
     )
 
 
