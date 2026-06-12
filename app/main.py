@@ -19,7 +19,9 @@ from app.courses.router import courses_router
 from app.context.router import router as context_router
 from app.decision.router import router as decision_router
 from app.education.router import education_router
+from app.emotions.router import emotions_router
 from app.experience.router import experience_router
+from app.facial_expressions.router import facial_expressions_router
 from app.goals.router import goals_router
 from app.history.router import router as history_router
 from app.interests.router import interests_router
@@ -97,6 +99,8 @@ def create_app() -> FastAPI:
     app.include_router(contacts_router)
     app.include_router(courses_router)
     app.include_router(education_router)
+    app.include_router(emotions_router)
+    app.include_router(facial_expressions_router)
     app.include_router(experience_router)
     app.include_router(certifications_router)
     app.include_router(conferences_router)

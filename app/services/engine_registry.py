@@ -16,7 +16,11 @@ from app.consciousness.proactive_engine import ProactiveEngine
 from app.context.context_engine import ContextEngine
 from app.decision.decision_engine import DecisionEngine
 from app.education.education_service_engine import EducationServiceEngine
+from app.emotions.emotion_service_engine import EmotionServiceEngine
 from app.experience.experience_service_engine import ExperienceServiceEngine
+from app.facial_expressions.facial_expression_service_engine import (
+    FacialExpressionServiceEngine,
+)
 from app.goal_tracker.goal_tracker_engine import GoalTrackerEngine
 from app.goals.goal_service_engine import GoalServiceEngine
 from app.habits.habit_service_engine import HabitServiceEngine
@@ -80,6 +84,8 @@ conference_service_engine = ConferenceServiceEngine()
 contact_engine = ContactEngine()
 course_service_engine = CourseServiceEngine()
 education_service_engine = EducationServiceEngine()
+emotion_service_engine = EmotionServiceEngine()
+facial_expression_service_engine = FacialExpressionServiceEngine()
 experience_service_engine = ExperienceServiceEngine()
 personality_engine = PersonalityEngine()
 goal_engine = GoalEngine()
