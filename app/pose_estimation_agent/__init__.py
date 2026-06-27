@@ -1,0 +1,1 @@
+"""Pose Estimation Agent module."""
